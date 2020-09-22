@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name ="viewport" content="width=device-width",initial-scaled=1.0>
+	<meta name ="Description" content="This is the description">
+	<meta name ="keywords" content="html, html tutorials, web development">
+	<meta name ="robots" content="INDEX, FOLLOW">
+	<title>FlexBox</title>
+	<style>
+		.container{
+			height: 544px;
+			width: 544;
+			border:2px solid black;
+			display: flex;
+
+			/*Flex properties for flex container*/
+			flex-direction: row;
+			/*flex-direction: row-reverse;*/
+			/*justify-content: center;*/
+			/*justify-content: space-between;*/
+			/*justify-content: space-around;*/
+			align-items: center;
+			align-items: flex-end;
+			align-items: flex-start;
+			align-items: stretch;
+			flex-wrap: wrap;
+
+		}
+		.item{
+			width: 100px;
+			height: 100px;
+			background-color: tomato;
+			border: 2px solid green;
+			margin: 10px;
+			padding: 3px; 
+		}
+		#item1{
+			/*higher the order,the box will appear later*/
+			/*order: 24;*/
+			/*flex-grow: 3;*/
+			/*to change the default size*/
+			flex-basis: 320px;
+			/*when flex-direction is set to row flex-basis will control width*/
+			/*when flex-direction is set to column flex-basis will control height*/
+
+
+		}
+		#item2{
+			order: 3;
+			/*flex-shrink: 2;*/
+
+			/*flex shorthand*/
+
+		}
+
+	</style>
+</head>
+<body>
+	<h3>FlexBox </h3>
+	<div class="container">
+	<div class="item" id="item1">First Box</div>
+	<div class="item" id="item2">Second Box</div>
+	<div class="item" id="item3">Third Box</div>
+	<div class="item" id="item4">Fourth Box</div>
+	<div class="item" id="item5">Fivth Box</div>
+	<div class="item" id="item6">Sixth Box</div>
+	</div>
+</body>
+</html>

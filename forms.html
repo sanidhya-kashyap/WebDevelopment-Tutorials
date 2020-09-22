@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms and Input tags</title>
+</head>
+<body>
+	<h2>This is HTML forms tutorial</h2>
+	<form action="backend.php">
+
+		<label for="name">Name</label>
+		<div>
+			<input type="text" name="myName" id="name">
+		</div><br>
+		<div>
+			Class: <input type="number" name="myClass">
+		
+		</div><br>
+		<div>
+			Email: <input type="text" name="myEmail">
+		
+		</div><br>
+
+		<div>
+			DOB: <input type="date" name="myDate">
+		
+		</div><br>
+		<div>
+			Gender: Male<input type="radio" name="myGender">
+			        Female<input type="radio" name="myGender">
+			        Other<input type="radio" name="myGender">
+		
+		</div><br>
+		<div>
+			<label for="country">Country</label>
+			<select name="myCountry" id="country">
+
+				<option value="none">None</option>
+				<option value="ind">India</option>
+				<option value="aus">Australia</option>
+			</select>
+		</div><br>
+
+		<div>
+			Please tick before final submit: <input type="checkbox" name="myFinal">
+		
+		</div><br>
+
+		<div>
+			Write about yourself:<br><TEXTAREA name="myText" cols="50" rows="6" ></TEXTAREA>
+		</div><br>
+		<div>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		
+		</div>
+		
+	</form>
+
+</body>
+</html>
+
+

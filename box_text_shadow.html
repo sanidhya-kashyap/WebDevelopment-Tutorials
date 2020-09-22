@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box and Text Shadow</title>
+</head>
+<style>
+	.container{
+		display: flex;
+		border: 2px solid red;
+	}
+	.card{
+		/*border: 2px solid red;*/
+		padding: 12px 12px;
+		margin: 23px 12px;
+		background-color: burlywood;
+
+		/*box-shadow: offset-x,offset-y,blur-radius,spread-radius,color*/
+
+		/*box-shadow: 12px 12px green;*/
+		box-shadow: 7px 5px 12px green;
+		/*box-shadow: inset 12px 12px green;*/
+	}
+	.card h2{
+		text-shadow: 2px 4px 12px  yellow;
+				
+	}
+
+</style>
+<body>
+	<div class="container">
+		<div class="card" id="card1">
+			<h2>Card1</h2>
+			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur perspiciatis, fugiat ratione accusamus velit, sunt quisquam inventore reprehenderit est optio ad id placeat debitis distinctio laborum aliquam dolor corrupti, iure nisi exercitationem. Distinctio, itaque!</P>
+		</div>
+		<div class="card" id="card2">
+			<h2>Card2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem recusandae architecto iusto, quaerat quia. Quia libero in, nulla deleniti perspiciatis suscipit culpa et, voluptatem iusto aperiam expedita consectetur voluptas nisi quisquam sint, aspernatur quod?</p>
+		</div>
+		<div class="card" id="card3">
+			<h2>Card3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ex beatae quia veniam officia aliquam natus nam. Doloribus dolorum aperiam, nemo earum quaerat omnis consequuntur accusantium sunt. Excepturi exercitationem, odit veritatis sit esse fugiat!</p>
+		</div>
+	</div>
+</body>
+</html>

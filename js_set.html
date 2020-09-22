@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		Time now is <span id="time"></span>
+	</div>
+
+	<script type="text/javascript">
+		console.log("Hello everyone");
+
+		// setTimeout --> run function once
+		// clearTimeout --> run function repeatedly
+
+		function greet(name, bye){
+			console.log("Hello Good Morning" + name + " " + bye);
+		}
+
+		// TimeOUT = setTimeout(greet,5000," Sanidhya", "Take Care");
+		// console.log(TimeOUT);
+		// clearTimeout(TimeOUT);
+
+		// inter = setInterval(greet,1000,"Sanidhya","bye");
+		// clearTimeout(inter);
+
+		function displayTime(){
+			time = new Date();
+			console.log(time);
+			document.getElementById('time').innerHTML = time;
+		}
+		setInterval(displayTime, 1000);
+
+	</script>
+
+</body>
+</html>

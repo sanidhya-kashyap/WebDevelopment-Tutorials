@@ -1,0 +1,17 @@
+/*ID Selector*/
+
+#redelement{
+	color: red;
+}
+/*multiple Selector*/
+footer,span{
+	background-color: pink;
+}
+
+/*class Selector*/
+.bgcolor{
+	background-color: #1BE2E4
+}
+p{
+	border:2px solid red;
+}
